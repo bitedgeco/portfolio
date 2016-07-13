@@ -31,3 +31,9 @@
 		max-width: 50%;
 	}
 }
+
+/*.anchor {
+    position: relative;
+    top: 100px;
+    visibility: hidden;
+}*/
