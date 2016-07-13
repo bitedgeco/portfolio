@@ -5,6 +5,10 @@
   	margin-right:auto;
 }*/
 
+.content {
+	padding-top: 5em;
+}
+
 #logo{
 	max-height: 2.5em;
 	margin-top: -0.7em;
@@ -20,4 +24,10 @@
 	margin: auto;
 	position: absolute;
 	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+@media only screen and (min-width: 992px) {
+	.progress, .list-group {
+		max-width: 50%;
+	}
 }

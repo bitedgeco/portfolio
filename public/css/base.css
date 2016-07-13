@@ -3,11 +3,7 @@ body {
 	background: url(../img/pink_rice.png);
 }
 
-p {
-	font-size: 1.2em;
-}
-
-h1, h3, h2, .project-p {
+h1, h3, .project-p {
 	text-align: center;
 }
 

@@ -1,0 +1,19 @@
+.progress-bar {
+	color: #333;
+	background-color: #ffd54c;
+}
+
+.list-group-item {
+	background-color: #ffd54c;
+}
+
+.navbar {
+	background-color: #ffd54c;
+}
+
+i {
+	color: #1d3550;
+}
+
+/*.nav-tabs>li.active>a:focus*/
+
