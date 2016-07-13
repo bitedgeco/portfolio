@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>James Canning Web Developer</title>
+	<title>James Canning</title>
 	<!-- Bootstrap CSS CDN-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<!-- Font Awsome CDN-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<!-- External CSS -->
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/modules.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<!-- navbar -->
-	<nav class="navbar navbar-default yamm">
+	<nav class="navbar navbar-default">
 		<div class="container">
       		<div class="navbar-header">
-        		<a class="navbar-brand" href="/">Logo here</a>
+	      		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	          		<span class="sr-only">Toggle navigation</span>
+	          		<span class="icon-bar"></span>
+	          		<span class="icon-bar"></span>
+	          		<span class="icon-bar"></span>
+	        	</button>
+        		<a class="navbar-brand" href="/"><img id="logo" src="img/logo.png"></a>
       		</div>
         	<div id="navbar" class="collapse navbar-collapse">
           		<ul class="nav navbar-nav">
@@ -24,20 +33,79 @@
             		<li class="grey-bg-hover"><a href="#prodjects"><i class="fa fa-lg fa-btc"></i> Prodjects</a></li>
         		</ul>
            		<ul class="nav navbar-nav navbar-right">
-					<li><a href="https://github.com/bitedgeco" target="_blank"><i class="fa fa-lg fa-github"></i></a></li>
+           			<li><a href="https://www.twitter.com/bitedgeco" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
+					<li><a href="https://www.facebook.com/bitcoinsharp/" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
 					<li><a href="https://ph.linkedin.com/in/jamescanningbitcoin" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></li>
+					<li><a href="https://github.com/bitedgeco" target="_blank"><i class="fa fa-lg fa-github"></i></a></li>
 				</ul>
         	</div>
       	</div>
   	</nav>
 
 	<div class="container">
-  		<p>hellow world</p>
-  	</div>
+		<h1>James Canning. Web Developer</h1>
+		<!-- <img class="portrait" src="img/james_canning.jpg"> -->
+		<h2>Some of my apps</h2>
+
+		<!-- HARD CODED HTML -->
+		<div class="row">
+			<div class="col-md-4">
+				<h3><a href="https://www.bitedge.co/" target="_blank">Bitedge</a></h3>
+				<div class="project-box">
+					<a href="http://www.bitedge.co/" target="_blank"><img class="project-img" src="img/bitedge.png"></a>
+				</div>
+				<h4 class="project-p">Helping you win bitcoin!</h4>
+			</div>
+			<div class="col-md-4">
+				<h3><a href="http://www.bitaverage.com/" target="_blank">Bitaverage</a></h3>
+				<div class="project-box">
+					<a href="http://www.bitaverage.com/" target="_blank"><img class="project-img" src="img/bitaverage2.png"></a>
+				</div>
+				<h4 class="project-p">Average price of bitcoin for any timeframe</h4>
+			</div>
+			<div class="col-md-4">
+				<h3><a href="#" target="_blank">Shakespearean insult generator</a></h3>
+				<div class="project-box">
+					<a href="#" target="_blank"><img class="project-img" src="img/shakespearean.jpg"></a>
+				</div>
+				<h4 class="project-p">Thou art a ...</h4>
+			</div>
+		</div>
+		<hr>
+		<!-- TEMPLATE WITH VALUES FROM JS FIRST ATTEMT-->
+
+		<div class="row">
+			<div class="col-md-4">
+				<h3 id="prodject-head-1"></h3>
+				<div class="project-box" id="project-box-1"></div>
+				<h4 class="project-p" id="project-p-1"></h4>
+			</div>
+
+			<div class="col-md-4">
+				<h3 id="prodject-head-2"></h3>
+				<div class="project-box" id="project-box-2"></div>
+				<h4 class="project-p" id="project-p-2"></h4>
+			</div>
+
+			<div class="col-md-4">
+				<h3 id="prodject-head-3"></h3>
+				<div class="project-box" id="project-box-3"></div>
+				<h4 class="project-p" id="project-p-3"></h4>
+			</div>
+		</div>
+		<hr>
+
+		<!-- TEMPLATE WITH VALUES FROM JS USEING HADELBARS (comming soon)-->
+
+
+	</div>
 		
 	<!-- JQuery CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<!-- Bootstrap JS CDN -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<!-- External JS -->     
+	<script src="js/main.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,21 @@
+body {
+	font-family: "Open Sans", "Avenir Next", "Helvetica Neue", Helvetica, sans-serif;
+	background: url(../img/pink_rice.png);
+}
+
+p {
+	font-size: 1.2em;
+}
+
+h1, h3, h2, .project-p {
+	text-align: center;
+}
+
+h3 { 
+	padding-bottom: 1em;
+}
+
+h3 a {
+	color: #333;
+}
+
