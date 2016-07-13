@@ -1,0 +1,23 @@
+/*.portrait {
+	max-width: 50em;
+	display:block;
+  	margin-left:auto;
+  	margin-right:auto;
+}*/
+
+#logo{
+	max-height: 2.5em;
+	margin-top: -0.7em;
+}
+
+.project-box {
+	height: 15em;
+	width: 15em;
+}
+
+.project-img {
+	max-width: 15em;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
