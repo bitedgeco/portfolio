@@ -1,17 +1,17 @@
 body {
-	font-family: "Open Sans", "Avenir Next", "Helvetica Neue", Helvetica, sans-serif;
-	background: url(../img/pink_rice.png);
+    font-family: "Open Sans", "Avenir Next", "Helvetica Neue", Helvetica, sans-serif;
+    background: url(../img/pink_rice.png);
 }
 
 h1, h3, .tag {
-	text-align: center;
+    text-align: center;
 }
 
 h3 { 
-	padding-bottom: 1em;
+    padding-bottom: 1em;
 }
 
 h3 a {
-	color: #333;
+    color: #333;
 }
 

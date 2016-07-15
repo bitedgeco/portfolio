@@ -1,41 +1,41 @@
 /*.portrait {
-	max-width: 50em;
-	display:block;
-  	margin-left:auto;
-  	margin-right:auto;
+    max-width: 50em;
+    display:block;
+      margin-left:auto;
+      margin-right:auto;
 }*/
 
 .content {
-	padding-top: 5em;
-	padding-bottom: 5em;
+    padding-top: 5em;
+    padding-bottom: 5em;
 
 }
 
 #logo{
-	max-height: 2.5em;
-	margin-top: -0.7em;
+    max-height: 2.5em;
+    margin-top: -0.7em;
 }
 
 .project-box {
-	height: 15em;
-	width: 15em;
+    height: 15em;
+    width: 15em;
 }
 
 .project-img {
-	max-width: 15em;
-	margin: auto;
-	position: absolute;
-	top: 0; left: 0; bottom: 0; right: 0;
+    max-width: 15em;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
 }
 
 @media only screen and (min-width: 992px) {
-	.progress, .list-group, .nav-tabs {
-		max-width: 50%;
-	}
+    .progress, .list-group, .nav-tabs {
+        max-width: 50%;
+    }
 }
 
 /*.anchor {
-	position: relative;
-	top: 100px;
-	visibility: hidden;
+    position: relative;
+    top: 100px;
+    visibility: hidden;
 }*/
