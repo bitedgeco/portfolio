@@ -9,7 +9,7 @@ projectData = [
         name:    'Bitaverage',
         img:     'img/bitaverage.png',
         tag:     'Average price of bitcoin for any timeframe',
-        link:    'https://www.bitaverage.com/'
+        link:    'http://www.bitaverage.com/'
     },
     {
         name:    'Shakespearean insult generator',

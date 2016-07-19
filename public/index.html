@@ -12,8 +12,18 @@
     <link rel="stylesheet" href="css/modules.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <script id="project-template" type="text/x-handlebars-template">
+    <!-- NOT AJAX -->
+<!--     <script id="project-template" type="text/x-handlebars-template">
+        <div class="col-md-4">
+            <h3><a href="{{link}}" target="_blank">{{name}}</a></h3>
+            <div class="project-box">
+                <a href="{{link}}" target="_blank"><img class="project-img" src="{{img}}"></a>
+            </div>
+            <h4 class="tag">{{tag}}</h4>
+        </div>
+    </script> -->
+    <!-- AJAX -->
+    <script id="projectAjax-template" type="text/x-handlebars-template">
         <div class="col-md-4">
             <h3><a href="{{link}}" target="_blank">{{name}}</a></h3>
             <div class="project-box">
@@ -22,6 +32,7 @@
             <h4 class="tag">{{tag}}</h4>
         </div>
     </script>
+
 </head>          
 <body>
 <div id="top"></div>
@@ -173,9 +184,14 @@
         </div> <!-- End tab panes -->
         <div class="anchor" id="apps"></div>
         <h2>Some of my apps</h2>
-        <!-- TEMPLATE WITH VALUES FROM HADELBARS -->
-        <div class="row">
+        <!-- TEMPLATE WITH VALUES FROM HADLEBARS -->
+        <!-- NOT AJAX -->
+<!--         <div class="row">
             <div id="projects"></div>
+        </div> -->
+        <!-- AJAX -->
+        <div class="row">
+            <div id="projectAjax"></div>
         </div>
         </div>
     </div>    
@@ -187,8 +203,8 @@
     <!-- Handlebars -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
     <!-- External JS -->     
-    <script src="js/project.js"></script>
-    <script src="js/main.js"></script>
+<!--     <script src="js/project.js"></script>
+ -->    <script src="js/main.js"></script>
 
 </body>
 </html>
