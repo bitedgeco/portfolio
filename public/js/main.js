@@ -1,5 +1,5 @@
 "use strict";
-// (function() {
+(function() {
 
     //NOT AJAX
     // var projects = [];
@@ -43,15 +43,12 @@
 
     function fetchAll() {
         if (localStorage.projectAjax) {
-            console.log("3ran");
             var projectData = JSON.parse(localStorage.projectAjax);
             ProjectAjax.loadAll(projectData);
             renderProjectAjax();
         } else {
-            console.log("data1");
             $.getJSON("/public/js/projectAjax.json", function(data){
                 localStorage.projectAjax = JSON.stringify(data);
-                console.log("data2");
                 ProjectAjax.loadAll(data);
                 renderProjectAjax();
             });
@@ -66,4 +63,4 @@
 
     fetchAll();
 
-// })();
+})();
