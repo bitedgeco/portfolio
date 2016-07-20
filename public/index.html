@@ -12,18 +12,8 @@
     <link rel="stylesheet" href="css/modules.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- NOT AJAX -->
-<!--     <script id="project-template" type="text/x-handlebars-template">
-        <div class="col-md-4">
-            <h3><a href="{{link}}" target="_blank">{{name}}</a></h3>
-            <div class="project-box">
-                <a href="{{link}}" target="_blank"><img class="project-img" src="{{img}}"></a>
-            </div>
-            <h4 class="tag">{{tag}}</h4>
-        </div>
-    </script> -->
-    <!-- AJAX -->
-    <script id="projectAjax-template" type="text/x-handlebars-template">
+
+    <script id="project-template" type="text/x-handlebars-template">
         <div class="col-md-4">
             <h3><a href="{{link}}" target="_blank">{{name}}</a></h3>
             <div class="project-box">
@@ -83,57 +73,57 @@
             <div role="tabpanel" class="tab-pane active" id="technicle">
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                    Search engine optimization <span class="pull-right">70%</span>
+                    Search engine optimization <span class="pull-right score">70%</span>
                     </div>
                 </div>
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                    Project managment <span class="pull-right">60%</span>
+                    Project managment <span class="pull-right score">60%</span>
                     </div>
                 </div>
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                    WordPress <span class="pull-right">60%</span>
+                    WordPress <span class="pull-right score">60%</span>
                     </div>
                 </div>
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                    Git version control <span class="pull-right">60%</span>
+                    Git version control <span class="pull-right score">60%</span>
                     </div>
                 </div>                    
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                    PHP and Laravel <span class="pull-right">50%</span>
+                    PHP and Laravel <span class="pull-right score">50%</span>
                     </div>
                 </div>            
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                    Front end JavaScript and JQuery <span class="pull-right">50%</span>
+                    Front end JavaScript and JQuery <span class="pull-right score">50%</span>
                     </div>
                 </div>            
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                    HTML and templating <span class="pull-right">50%</span>
+                    HTML and templating <span class="pull-right score">50%</span>
                     </div>
                 </div>            
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                    CSS and Bootstrap <span class="pull-right">50%</span>
+                    CSS and Bootstrap <span class="pull-right score">50%</span>
                     </div>
                 </div>            
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
-                    MySQL database <span class="pull-right">40%</span>
+                    MySQL database <span class="pull-right score">40%</span>
                     </div>
                 </div>            
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
-                    Ajax and APIs <span class="pull-right">30%</span>
+                    Ajax and APIs <span class="pull-right score">30%</span>
                     </div>
                 </div>        
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
-                    Linux system admin <span class="pull-right">20%</span>
+                    Linux system admin <span class="pull-right score">20%</span>
                     </div>
                 </div>        
             </div>
@@ -182,19 +172,16 @@
                 </ul>
             </div>
         </div> <!-- End tab panes -->
+
+        <div id="total">Total srores: <span id="totalScore"></span> out of 1100 or 49%</div>
+
         <div class="anchor" id="apps"></div>
         <h2>Some of my apps</h2>
         <!-- TEMPLATE WITH VALUES FROM HADLEBARS -->
-        <!-- NOT AJAX -->
-<!--         <div class="row">
-            <div id="projects"></div>
-        </div> -->
-        <!-- AJAX -->
         <div class="row">
-            <div id="projectAjax"></div>
+            <div id="projects"></div>
         </div>
-        </div>
-    </div>    
+    </div>
 
     <!-- JQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
@@ -203,8 +190,8 @@
     <!-- Handlebars -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
     <!-- External JS -->     
-<!--     <script src="js/project.js"></script>
- -->    <script src="js/main.js"></script>
+    <script src="js/project.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>
