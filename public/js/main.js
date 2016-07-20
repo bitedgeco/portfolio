@@ -1,66 +1,48 @@
 "use strict";
 (function() {
 
-    //NOT AJAX
-    // var projects = [];
+    var projects = [];
 
     // function Project (opts) {
     //     for (var key in opts) this[key] = opts[key];
     // };
 
-    // Project.prototype.toHtml = function() {
-    //     var source = $('#project-template').html();
-    //     var template = Handlebars.compile(source);
-    // return template(this);
-    // };
+    // .map, .reduce are .filter are not availible to opts
 
-    // projectData.forEach(function(projectObject) {
-    //     projects.push(new Project(projectObject));
-    // });
-
-    // projects.forEach(function(NewProjectObject){
-    //     $('#projects').append(NewProjectObject.toHtml());
-    // });
-
-    // AJAX
-    ProjectAjax.all = [];
-
-    function ProjectAjax (opts) {
-        for (var key in opts) this[key] = opts[key];
-    };
-
-    ProjectAjax.prototype.toHtml = function() {
-        var source = $('#projectAjax-template').html();
-        var template = Handlebars.compile(source);
-    return template(this);
-    };
-
-    ProjectAjax.loadAll = function (dataWePassIn) {
-        dataWePassIn.forEach(function(ele) {
-            ProjectAjax.all.push(new ProjectAjax(ele));
-        });
-    };
-
-    function fetchAll() {
-        if (localStorage.projectAjax) {
-            var projectData = JSON.parse(localStorage.projectAjax);
-            ProjectAjax.loadAll(projectData);
-            renderProjectAjax();
-        } else {
-            $.getJSON("/public/js/projectAjax.json", function(data){
-                localStorage.projectAjax = JSON.stringify(data);
-                ProjectAjax.loadAll(data);
-                renderProjectAjax();
-            });
-        };
+    function Project (opts) {
+        this.name = opts.name;
+        this.img = opts.img;
+        this.tag = opts.tag;
+        this.link = opts.link;
     }
 
-    function renderProjectAjax() {
-        ProjectAjax.all.forEach(function(a){
-            $('#projectAjax').append(a.toHtml('#projectAjax-template'));
-            });
-        }; 
+    Project.prototype.toHtml = function() {
+        var source = $('#project-template').html();
+        var template = Handlebars.compile(source);
+        return template(this);
+    };
 
-    fetchAll();
+    projectData.forEach(function(projectObject) {
+        projects.push(new Project(projectObject));
+    });
+
+    projects.forEach(function(NewProjectObject){
+        $('#projects').append(NewProjectObject.toHtml());
+    });
+
+    // Add all progres bar scores, I would like to calculate the total as a % as ewell but have run out of time
+
+    var scores = $('.score').text(); 
+
+    scores = scores.split("%");
+    scores.pop();
+    scores = scores.map(Number);
+    scores = scores.reduce(function(scoreA, scoreB) {
+        return scoreA + scoreB;
+    });
+
+    $('#totalScore').text(scores);
 
 })();
+
+
