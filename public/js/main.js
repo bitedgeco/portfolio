@@ -23,7 +23,7 @@
         $('#progressBar').append(NewProgressBarObject.toHtml());
     });
 
-    // Add all progres bar scores,  and percentage
+    // Add all progres bar scores
     function getScores(){
         var scores = $('.score').text(); 
         scores = scores.split("%");
