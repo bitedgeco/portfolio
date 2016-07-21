@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>James Canning</title>
+
     <!-- Bootstrap CSS CDN-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- Font Awsome CDN-->
@@ -13,6 +14,14 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <script id="progressBar-template" type="text/x-handlebars-template">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="{{score}}" aria-valuemin="0" aria-valuemax="100" style="width: {{score}}%;">
+                <span class="pull-left">{{name}}</span><span class="pull-right score">{{score}}%</span>
+            </div>
+        </div> 
+    </script>
+
     <script id="project-template" type="text/x-handlebars-template">
         <div class="col-md-4">
             <h3><a href="{{link}}" target="_blank">{{name}}</a></h3>
@@ -20,6 +29,7 @@
                 <a href="{{link}}" target="_blank"><img class="project-img" src="{{img}}"></a>
             </div>
             <h4 class="tag">{{tag}}</h4>
+            <hr>
         </div>
     </script>
 
@@ -71,61 +81,11 @@
         <!-- Tab panes -->
         <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="technicle">
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                    Search engine optimization <span class="pull-right score">70%</span>
-                    </div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                    Project managment <span class="pull-right score">60%</span>
-                    </div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                    WordPress <span class="pull-right score">60%</span>
-                    </div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                    Git version control <span class="pull-right score">60%</span>
-                    </div>
-                </div>                    
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                    PHP and Laravel <span class="pull-right score">50%</span>
-                    </div>
-                </div>            
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                    Front end JavaScript and JQuery <span class="pull-right score">50%</span>
-                    </div>
-                </div>            
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                    HTML and templating <span class="pull-right score">50%</span>
-                    </div>
-                </div>            
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                    CSS and Bootstrap <span class="pull-right score">50%</span>
-                    </div>
-                </div>            
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
-                    MySQL database <span class="pull-right score">40%</span>
-                    </div>
-                </div>            
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
-                    Ajax and APIs <span class="pull-right score">30%</span>
-                    </div>
-                </div>        
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
-                    Linux system admin <span class="pull-right score">20%</span>
-                    </div>
-                </div>        
+                <p id="scale">These are the main technical proficiencies relate to my apps. The scale is my current ability as a % of the ability I want to achieve in order to run my apps.</p>
+                <p>Total srore: <span id="totalScore"></span> out of <span id="maxScore"></span> or <span id="scorePercent"></span>%</p>
+        
+                <div id="progressBar"></div>
+      
             </div>
             <div role="tabpanel" class="tab-pane" id="skills">
                 <ul class="list-group">
@@ -173,14 +133,13 @@
             </div>
         </div> <!-- End tab panes -->
 
-        <div id="total">Total srores: <span id="totalScore"></span> out of 1100 or 49%</div>
-
         <div class="anchor" id="apps"></div>
         <h2>Some of my apps</h2>
         <!-- TEMPLATE WITH VALUES FROM HADLEBARS -->
         <div class="row">
             <div id="projects"></div>
         </div>
+
     </div>
 
     <!-- JQuery CDN -->
@@ -191,6 +150,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
     <!-- External JS -->     
     <script src="js/project.js"></script>
+    <script src="js/progressBar.js"></script>
     <script src="js/main.js"></script>
 
 </body>
