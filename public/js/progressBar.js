@@ -4,16 +4,12 @@ progressBarData = [
         score:   70
     },
     {
-        name:    'Project managment',
-        score:   60
-    },
-    {
         name:    'WordPress',
-        score:   60
+        score:   65
     },
     {
-        name:    'Git version control',
-        score:   60
+        name:    'HTML and templating',
+        score:   65
     },
     {
         name:    'Front end JavaScript and JQuery',
@@ -25,15 +21,19 @@ progressBarData = [
     },
     {
         name:    'PHP and Laravel',
-        score:   50
+        score:   60
     },
     {
-        name:    'HTML and templating',
-        score:   50
+        name:    'Git version control',
+        score:   55
+    },
+    {
+        name:    'Project managment',
+        score:   55
     },
     {
         name:    'MySQL database',
-        score:   40
+        score:   45
     },
     {
         name:    'Linux system admin',

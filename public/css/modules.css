@@ -16,10 +16,10 @@ i {
 }
 
  hr { 
-  border: 0; 
-  height: 1px; 
-  background-image: -webkit-linear-gradient(left, #ffd54c, #FFF, #ffd54c);
-  background-image: -moz-linear-gradient(left, #ffd54c, #FFF, #ffd54c);
-  background-image: -ms-linear-gradient(left, #ffd54c, #FFF, #ffd54c);
-  background-image: -o-linear-gradient(left, #ffd54c, #FFF, #ffd54c; 
+    border: 0; 
+    height: 1px; 
+    background-image: -webkit-linear-gradient(left, #ffd54c, #FFF, #ffd54c);
+    background-image: -moz-linear-gradient(left, #ffd54c, #FFF, #ffd54c);
+    background-image: -ms-linear-gradient(left, #ffd54c, #FFF, #ffd54c);
+    background-image: -o-linear-gradient(left, #ffd54c, #FFF, #ffd54c; 
 }

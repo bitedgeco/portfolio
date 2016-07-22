@@ -1,8 +1,7 @@
-"use strict";
+'use strict';
 (function() {
 
     // Send progress data to handelbars template
-
     var progressBars = [];
 
     function ProgressBar (opts) {
@@ -23,10 +22,10 @@
         $('#progressBar').append(NewProgressBarObject.toHtml());
     });
 
-    // Add all progres bar scores,  and percentage
+    // Add all progres bar scores
     function getScores(){
         var scores = $('.score').text(); 
-        scores = scores.split("%");
+        scores = scores.split('%');
         scores.pop();
         scores = scores.map(Number);
         var totalScore = scores.reduce(function(scoreA, scoreB) {
@@ -37,7 +36,7 @@
     // calculate max score
     function getMaxScore(){
         var maxScore = $('.score').size() * 100;
-        return maxScore
+        return maxScore;
     }
     // calculate scores as a percentage of max scores
     function getScorePercent(){
@@ -46,6 +45,7 @@
         return scorePercent;
     }
     
+    // output the above 3 functions to the view
     $('#totalScore').text(getScores);
     $('#maxScore').text(getMaxScore);
     $('#scorePercent').text(getScorePercent);
@@ -72,9 +72,3 @@
     });
 
 })();
-
-
-
-
-
-
