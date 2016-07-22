@@ -23,11 +23,12 @@
     });
 
     // Add all progres bar scores
-    function getScores(){
-        var scores = $('.score').text(); 
-        scores = scores.split('%');
-        scores.pop();
-        scores = scores.map(Number);
+    function getScores(){   //get scores from array of score objects
+
+        var scores = progressBarData.map(function(s) {
+            return s.score;
+        })
+
         var totalScore = scores.reduce(function(scoreA, scoreB) {
             return scoreA + scoreB;
         });

@@ -3,10 +3,6 @@ body {
     background: url(../img/pink_rice.png);
 }
 
-h1, h3, .tag {
-    text-align: center;
-}
-
 h3 a {
     color: #333;
 }
