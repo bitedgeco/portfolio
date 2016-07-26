@@ -52,6 +52,7 @@
     $('#scorePercent').text(getScorePercent);
 
     // Send project data to handelbars template
+    
     var projects = [];
 
     function Project (opts) {
