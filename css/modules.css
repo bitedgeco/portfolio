@@ -21,5 +21,13 @@ i {
     background-image: -webkit-linear-gradient(left, #ffd54c, #FFF, #ffd54c);
     background-image: -moz-linear-gradient(left, #ffd54c, #FFF, #ffd54c);
     background-image: -ms-linear-gradient(left, #ffd54c, #FFF, #ffd54c);
-    background-image: -o-linear-gradient(left, #ffd54c, #FFF, #ffd54c; 
+    background-image: -o-linear-gradient(left, #ffd54c, #FFF, #ffd54c); 
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.grey-bg-hover:hover{
+    background-color: #ffe387;
 }

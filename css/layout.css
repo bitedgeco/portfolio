@@ -1,15 +1,23 @@
-h1, h3, .tag {
+h1, .project-head, .tag {
     text-align: center;
 }
 
-.content {
+.project-head {
+    text-align: center;
+}
+
+h2 {
+    padding-top: 3rem;
+}
+
+#content {
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
 
 #logo{
-    max-height: 2.5rem;
-    margin-top: -0.7rem;
+    max-height: 4rem;
+    margin-top: -0.8rem;
 }
 
 .project-box {
