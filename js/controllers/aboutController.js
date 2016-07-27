@@ -1,5 +1,5 @@
 'use strict';
 function aboutController() {
-	$('.sections').hide();
+	$('.section').hide();
 	$('#about-section').fadeIn();
 };

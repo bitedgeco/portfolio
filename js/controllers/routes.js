@@ -1,10 +1,10 @@
 'use strict';
-$(document).ready(function(){
-	page();
-	page('/', home);
-	page('/about', about);
-	page('/projects' , projects);
-});
+page();
+page('/', home);
+page('/about', about);
+page('/projects' , project);
+page('/repos' , repo);
+
 
 function home() {
 	homeController();
@@ -14,9 +14,14 @@ function about() {
     aboutController();
 }
 
-function projects() {
-	projectsController();
+function project() {
+	projectController();
 }
+
+function repo() {
+	repoController();
+}
+
 
 
 

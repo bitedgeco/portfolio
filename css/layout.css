@@ -1,5 +1,13 @@
-h1, h3, .tag {
+h1, .project-head, .tag {
     text-align: center;
+}
+
+.project-head {
+    text-align: center;
+}
+
+h2 {
+    padding-top: 3rem;
 }
 
 #content {
