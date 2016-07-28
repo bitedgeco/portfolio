@@ -10,11 +10,11 @@ projectData = [
         img:     'img/bitaverage.png',
         tag:     'Average price of bitcoin for any timeframe',
         link:    'http://www.bitaverage.com/'
-    },
-    {
-        name:    'Shakespearean insult generator',
-        img:     'img/shakespearean.jpg',
-        tag:     'Thou art a ...',
-        link:    '#'
     }
+    // {
+    //     name:    'Shakespearean insult generator',
+    //     img:     'img/shakespearean.jpg',
+    //     tag:     'Thou art a ... (comming soon)',
+    //     link:    ''
+    // }
 ];

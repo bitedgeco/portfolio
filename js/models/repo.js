@@ -8,7 +8,7 @@
     reposObj.requestRepos = function(nextFunction) {
         $.ajax({
         url: 'https://api.github.com/users/bitedgeco/repos' +
-        '?per_page=3' +
+        '?per_page=4' +
         '&sort=update',
         type: 'GET',
         headers: {
