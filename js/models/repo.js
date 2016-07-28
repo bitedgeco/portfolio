@@ -12,7 +12,6 @@
         '&sort=update',
         type: 'GET',
         headers: {
-            'Authorization': 'token ' + githubToken,
         },
         success: function(data, message, xhr) {
             reposObj.allRepos = data;
