@@ -20,3 +20,4 @@
     module.repoView = repoView;
 
 })(window);
+
