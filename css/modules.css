@@ -9,13 +9,15 @@
 
 .navbar {
     background-color: #ffd54c;
+        border-color: #1d3550 #1d3550;
+
 }
 
 i {
     color: #1d3550;
 }
 
- hr { 
+hr { 
     border: 0; 
     height: 1px; 
     background-image: -webkit-linear-gradient(left, #ffd54c, #FFF, #ffd54c);
@@ -30,4 +32,18 @@ i {
 
 .grey-bg-hover:hover{
     background-color: #ffe387;
+}
+
+.navbar-brand:hover {
+    opacity: 0.7;
+}
+
+.panel-footer {
+    background-color: #ffd54c;
+    height: 4rem;
+    border-color: #1d3550 #1d3550;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
 }
