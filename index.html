@@ -61,16 +61,16 @@
               </div>
             <div id="navbar" class="collapse navbar-collapse">
                   <ul class="nav navbar-nav">
-                    <li class="grey-bg-hover"><a href="/"><i class="fa fa-lg fa-home"></i> Home</a></li>
-                    <li class="grey-bg-hover"><a href="/about"><i class="fa fa-lg fa-info-circle"></i> About</a></li>
-                    <li class="grey-bg-hover"><a href="/projects"><i class="fa fa-lg fa-btc"></i> Projects</a></li>
-                    <li class="grey-bg-hover"><a href="/repos"><i class="fa fa-lg fa-github"></i> Repos</a></li>
+                    <li class="nav-item" id="home-nav"><a href="/"><i class="fa fa-lg fa-home"></i> Home</a></li>
+                    <li class="nav-item" id="about-nav"><a href="/about"><i class="fa fa-lg fa-info-circle"></i> About</a></li>
+                    <li class="nav-item" id="project-nav"><a href="/projects"><i class="fa fa-lg fa-btc"></i> Projects</a></li>
+                    <li class="nav-item" id="repos-nav"><a href="/repos"><i class="fa fa-lg fa-github"></i> Repos</a></li>
                 </ul>
                     <ul class="nav navbar-nav navbar-right">
-                    <li class="grey-bg-hover"><a href="https://www.twitter.com/bitedgeco" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
-                    <li class="grey-bg-hover"><a href="https://www.facebook.com/bitcoinsharp/" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
-                    <li class="grey-bg-hover"><a href="https://ph.linkedin.com/in/jamescanningbitcoin" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></li>
-                    <li class="grey-bg-hover"><a href="https://github.com/bitedgeco" target="_blank"><i class="fa fa-lg fa-github"></i></a></li>
+                    <li class="nav-item"><a href="https://www.twitter.com/bitedgeco" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
+                    <li class="nav-item"><a href="https://www.facebook.com/bitcoinsharp/" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
+                    <li class="nav-item"><a href="https://ph.linkedin.com/in/jamescanningbitcoin" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></li>
+                    <li class="nav-item"><a href="https://github.com/bitedgeco" target="_blank"><i class="fa fa-lg fa-github"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -167,7 +167,6 @@
 
     <footer class="panel-footer"></footer>
 
-
     <!-- JQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <!-- Bootstrap JS CDN -->
@@ -177,11 +176,11 @@
     <!-- Page.js -->
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
     <!-- controllers -->    
-    <script src="js/controllers/routes.js"></script>
     <script src="js/controllers/homeController.js"></script>
     <script src="js/controllers/aboutController.js"></script>
     <script src="js/controllers/projectController.js"></script>
     <script src="js/controllers/repoController.js"></script>
+    <script src="js/controllers/route.js"></script>
     <!-- models -->     
     <script src="js/models/project.js"></script>
     <script src="js/models/progressBar.js"></script>
@@ -190,7 +189,6 @@
     <script src="js/views/repoView.js"></script>
     <script src="js/views/projectView.js"></script>
     <script src="js/views/progressView.js"></script>
-
 
 </body>
 </html>

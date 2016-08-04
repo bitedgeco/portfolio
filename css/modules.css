@@ -9,8 +9,7 @@
 
 .navbar {
     background-color: #ffd54c;
-        border-color: #1d3550 #1d3550;
-
+    /*border-color: #FFFFFF;*/
 }
 
 i {
@@ -30,7 +29,7 @@ hr {
     font-weight: bold;
 }
 
-.grey-bg-hover:hover{
+.nav-item:hover{
     background-color: #ffe387;
 }
 
@@ -41,7 +40,7 @@ hr {
 .panel-footer {
     background-color: #ffd54c;
     height: 4rem;
-    border-color: #1d3550 #1d3550;
+    /*border-color: #1d3550 #1d3550;*/
     position: absolute;
     bottom: 0;
     width: 100%;
