@@ -1,26 +1,10 @@
 'use strict';
+
+page('/', homeController);
+page('/about', aboutController);
+page('/projects' , projectController);
+page('/repos' , repoController);
 page();
-page('/', home);
-page('/about', about);
-page('/projects' , project);
-page('/repos' , repo);
-
-
-function home() {
-	homeController();
-}
-
-function about() {
-    aboutController();
-}
-
-function project() {
-	projectController();
-}
-
-function repo() {
-	repoController();
-}
 
 
 

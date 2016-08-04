@@ -36,7 +36,7 @@ progressBarData = [
         score:   45
     },
     {
-        name:    'Linux system admin',
+        name:    'Hosting admin',
         score:   20
     },
     {
