@@ -1,5 +1,4 @@
 'use strict';
-
 page('/', homeController);
 page('/about', aboutController);
 page('/projects' , projectController);
