@@ -12,9 +12,9 @@ projectData = [
         link:    'http://www.bitaverage.com/'
     },
     {
-        name:    'Shakespearean insult generator',
-        img:     'img/shakespearean.jpg',
-        tag:     'Thou art a ... (comming soon)',
-        link:    ''
+        name:    'Sentinal',
+        img:     'img/sentinal.png',
+        tag:     'Twitter sentiment analysis for any word',
+        link:    'https://sentinal-app.herokuapp.com/'
     }
 ];
